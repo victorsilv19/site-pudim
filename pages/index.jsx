@@ -23,91 +23,55 @@ export default function Home() {
 
       <Header />
 
-      <main className="min-h-screen">
+      <main className="min-h-screen bg-gradient-to-br from-background to-gray-50 dark:to-gray-900">
         {/* Hero Section */}
-        <section className="relative overflow-hidden px-4 py-20 sm:px-6 lg:px-8">
-          <div className="absolute inset-x-0 top-0 h-72 bg-gradient-to-b from-primary/10 via-transparent to-transparent dark:from-primary/20" />
-          <div className="relative mx-auto max-w-6xl text-center">
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-4 py-2 text-sm font-semibold text-primary shadow-sm dark:border-primary/30 dark:bg-primary/10">
-              <span className="inline-block h-2.5 w-2.5 rounded-full bg-primary" />
-              Arte e sabor em cada fatia
-            </div>
-            <h1 className="mb-6 text-5xl font-black leading-tight text-foreground sm:text-6xl">
-              Pudins Artesanais<br />
-              <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-                Deliciosos
-              </span>
+        <section className="relative overflow-hidden py-20 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-6xl mx-auto text-center">
+            <h1 className="text-5xl sm:text-6xl font-bold text-foreground mb-6 leading-tight">
+              Pudins Artesanais Deliciosos
             </h1>
-            <p className="mx-auto mb-10 max-w-2xl text-xl text-gray-600 dark:text-gray-300">
-              Feitos com amor, ingredientes selecionados e um toque especial para surpreender na sua mesa. 🍮
+            <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
+              Feitos com amor e ingredientes de qualidade. Cada produção é especial para você! 🍮
             </p>
-            <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <a
-                href="#produtos"
-                className="rounded-full bg-gradient-to-r from-primary to-secondary px-6 py-3 font-bold text-white shadow-lg shadow-primary/25 transition-transform hover:-translate-y-0.5"
-              >
-                Ver produtos
-              </a>
-              <a
-                href="https://wa.me/5545999409316"
-                target="_blank"
-                rel="noreferrer"
-                className="rounded-full border border-primary/30 bg-white/70 px-6 py-3 font-bold text-primary transition-colors hover:bg-primary/5 dark:border-primary/40 dark:bg-slate-900/60 dark:text-pink-300"
-              >
-                Fazer pedido
-              </a>
-            </div>
           </div>
         </section>
 
         {/* Carousel Section */}
-        <section id="produtos" className="px-4 py-16 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-6xl">
-            <div className="mb-10 text-center">
-              <p className="mb-2 text-sm font-bold uppercase tracking-[0.2em] text-primary">Produtos</p>
-              <h2 className="text-4xl font-bold text-foreground">Nossos destaques</h2>
-            </div>
-            <div className="glass-panel rounded-[2rem] p-4 sm:p-6">
-              <Carousel products={products} />
-            </div>
+        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-800">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-4xl font-bold text-center text-foreground mb-12">Nossos Produtos</h2>
+            <Carousel products={products} />
           </div>
         </section>
 
         {/* About Section */}
-        <section className="px-4 py-16 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-6xl">
-            <div className="grid items-center gap-10 md:grid-cols-2">
-              <div className="soft-card rounded-[2rem] p-8 md:p-10">
-                <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-primary">Por que escolher</p>
-                <h2 className="mb-6 text-3xl font-bold text-foreground">Qualidade e sabor em cada detalhe</h2>
-                <ul className="space-y-4 text-gray-700 dark:text-gray-200">
-                  <li className="flex items-start gap-3">
-                    <span className="mt-1 inline-flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-primary/15 text-primary">✓</span>
-                    <span>Receitas tradicionais e irresistíveis, com cara de casa.</span>
+        <section className="py-16 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div>
+                <h2 className="text-3xl font-bold text-foreground mb-6">Por que escolher nossos produtos?</h2>
+                <ul className="space-y-4 text-gray-700 dark:text-gray-300">
+                  <li className="flex items-start">
+                    <span className="inline-block w-6 h-6 bg-primary rounded-full mr-4 mt-1 flex-shrink-0"></span>
+                    <span>Receitas autênticas e deliciosas</span>
                   </li>
-                  <li className="flex items-start gap-3">
-                    <span className="mt-1 inline-flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-primary/15 text-primary">✓</span>
-                    <span>Ingredientes frescos e produção artesanal com cuidado.</span>
+                  <li className="flex items-start">
+                    <span className="inline-block w-6 h-6 bg-primary rounded-full mr-4 mt-1 flex-shrink-0"></span>
+                    <span>Preparados com ingredientes frescos</span>
                   </li>
-                  <li className="flex items-start gap-3">
-                    <span className="mt-1 inline-flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-primary/15 text-primary">✓</span>
-                    <span>Preço justo, atendimento rápido e entrega com qualidade.</span>
+                  <li className="flex items-start">
+                    <span className="inline-block w-6 h-6 bg-primary rounded-full mr-4 mt-1 flex-shrink-0"></span>
+                    <span>Venda direta - melhor preço para você</span>
                   </li>
-                  <li className="flex items-start gap-3">
-                    <span className="mt-1 inline-flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-primary/15 text-primary">✓</span>
-                    <span>Produção especial para festas, encomendas e momentos doces.</span>
+                  <li className="flex items-start">
+                    <span className="inline-block w-6 h-6 bg-primary rounded-full mr-4 mt-1 flex-shrink-0"></span>
+                    <span>Produção artesanal com carinho</span>
                   </li>
                 </ul>
               </div>
-
-              <div className="soft-card rounded-[2rem] p-8 text-center md:p-10">
-                <div className="mx-auto mb-6 flex h-24 w-24 items-center justify-center rounded-full bg-gradient-to-br from-primary/15 via-accent/15 to-secondary/15 text-5xl shadow-inner shadow-primary/20 dark:shadow-primary/10">
-                  🍮
-                </div>
-                <p className="text-2xl font-black text-foreground">Feito com Amor</p>
-                <p className="mt-4 text-gray-600 dark:text-gray-300">
-                  Cada sobremesa é preparada com atenção, sabor e carinho para deixar sua ocasião ainda mais especial.
-                </p>
+              <div className="bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl p-8 text-center">
+                <p className="text-6xl mb-4">🍮</p>
+                <p className="text-lg text-foreground font-semibold">Feito com Amor</p>
               </div>
             </div>
           </div>

@@ -2,9 +2,7 @@ import { Phone, MapPin, MessageCircle } from 'lucide-react';
 
 export function ContactSection() {
   const phone = '45999409316';
-  const location = 'Av. Andradina, 1852 - Ipê, Foz do Iguaçu - PR, 85869-380';
-  const mapUrl =
-    'https://www.google.com/maps?q=Av.%20Andradina%2C%201852%20-%20Ip%C3%AA%2C%20Foz%20do%20Igua%C3%A7u%20-%20PR%2C%2085869-380&output=embed';
+  const location = 'Foz do Iguaçu - PR';
   const whatsappUrl = `https://wa.me/55${phone}?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20dos%20seus%20pudins%20artesanais!`;
 
   return (
@@ -59,19 +57,15 @@ export function ContactSection() {
         {/* Map Section */}
         <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-lg">
           <h3 className="text-2xl font-semibold text-foreground mb-6 text-center">Nossa Localização</h3>
-          <div className="overflow-hidden rounded-xl border border-gray-200 dark:border-gray-700">
-            <iframe
-              title="Localização do Pudim Artesanal"
-              src={mapUrl}
-              width="100%"
-              height="420"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
+          <div className="bg-gray-200 dark:bg-gray-800 rounded-xl h-96 flex items-center justify-center">
+            <div className="text-center">
+              <p className="text-6xl mb-4">📍</p>
+              <p className="text-gray-600 dark:text-gray-400 font-semibold mb-2">{location}</p>
+              <p className="text-sm text-gray-500 dark:text-gray-500">
+                Você pode encontrar um mapa aqui adicionando Google Maps
+              </p>
+            </div>
           </div>
-          <p className="mt-4 text-center text-gray-600 dark:text-gray-400 font-semibold">{location}</p>
         </div>
       </div>
     </section>

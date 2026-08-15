@@ -42,15 +42,15 @@ export function ThemeProvider({ children }) {
         '--color-primary': '#ec4899',
         '--color-secondary': '#f97316',
         '--color-accent': '#06b6d4',
-        '--color-bg': '#fffaf7',
+        '--color-bg': '#ffffff',
         '--color-fg': '#1f2937',
       },
       dark: {
-        '--color-primary': '#f472b6',
-        '--color-secondary': '#fb923c',
-        '--color-accent': '#67e8f9',
-        '--color-bg': '#0f172a',
-        '--color-fg': '#f8fafc',
+        '--color-primary': '#ec4899',
+        '--color-secondary': '#f97316',
+        '--color-accent': '#06b6d4',
+        '--color-bg': '#111827',
+        '--color-fg': '#f3f4f6',
       },
     };
 

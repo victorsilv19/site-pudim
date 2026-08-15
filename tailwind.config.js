@@ -7,11 +7,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: 'rgb(var(--color-primary-rgb) / <alpha-value>)',
-        secondary: 'rgb(var(--color-secondary-rgb) / <alpha-value>)',
-        accent: 'rgb(var(--color-accent-rgb) / <alpha-value>)',
-        background: 'rgb(var(--color-bg-rgb) / <alpha-value>)',
-        foreground: 'rgb(var(--color-fg-rgb) / <alpha-value>)',
+        primary: 'var(--color-primary)',
+        secondary: 'var(--color-secondary)',
+        accent: 'var(--color-accent)',
+        background: 'var(--color-bg)',
+        foreground: 'var(--color-fg)',
       },
     },
   },
