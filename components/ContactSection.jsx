@@ -6,7 +6,7 @@ export function ContactSection() {
   const whatsappUrl = `https://wa.me/55${phone}?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20dos%20seus%20pudins%20artesanais!`;
 
   return (
-    <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-primary/10 via-accent/10 to-primary/10 dark:from-gray-800 dark:to-gray-800">
+    <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-primary/10 via-accent/10 to-primary/10">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-foreground mb-8 sm:mb-12">
           ☎️ Entre em Contato
@@ -14,12 +14,12 @@ export function ContactSection() {
 
         <div className="grid sm:grid-cols-3 gap-4 sm:gap-8 mb-8 sm:mb-12">
           {/* Phone */}
-          <div className="bg-white dark:bg-gray-900 rounded-lg sm:rounded-2xl p-5 sm:p-8 text-center shadow-lg hover:shadow-xl transition-shadow">
+          <div className="bg-white rounded-lg sm:rounded-2xl p-5 sm:p-8 text-center shadow-lg hover:shadow-xl transition-shadow">
             <div className="inline-block bg-primary/10 rounded-full p-3 sm:p-4 mb-3 sm:mb-4">
               <Phone className="w-6 h-6 sm:w-8 sm:h-8 text-primary" />
             </div>
             <h3 className="text-base sm:text-xl font-semibold text-foreground mb-2 sm:mb-3">Telefone</h3>
-            <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 mb-3 sm:mb-4">Ligue ou chame</p>
+            <p className="text-xs sm:text-sm text-gray-600 mb-3 sm:mb-4">Ligue ou chame</p>
             <a
               href={`tel:${phone}`}
               className="text-primary font-bold text-base sm:text-lg hover:underline break-all"
@@ -29,23 +29,23 @@ export function ContactSection() {
           </div>
 
           {/* Location */}
-          <div className="bg-white dark:bg-gray-900 rounded-lg sm:rounded-2xl p-5 sm:p-8 text-center shadow-lg hover:shadow-xl transition-shadow">
+          <div className="bg-white rounded-lg sm:rounded-2xl p-5 sm:p-8 text-center shadow-lg hover:shadow-xl transition-shadow">
             <div className="inline-block bg-accent/10 rounded-full p-3 sm:p-4 mb-3 sm:mb-4">
               <MapPin className="w-6 h-6 sm:w-8 sm:h-8 text-accent" />
             </div>
             <h3 className="text-base sm:text-xl font-semibold text-foreground mb-3">Localização</h3>
             <p className="text-foreground font-bold text-sm sm:text-base mb-1">Av. Andradina, 1852</p>
             <p className="text-foreground font-bold text-sm sm:text-base mb-2">Ipê, Foz do Iguaçu - PR</p>
-            <p className="text-gray-500 dark:text-gray-400 text-xs sm:text-sm">85869-380</p>
+            <p className="text-gray-500 text-xs sm:text-sm">85869-380</p>
           </div>
 
           {/* WhatsApp */}
-          <div className="bg-white dark:bg-gray-900 rounded-lg sm:rounded-2xl p-5 sm:p-8 text-center shadow-lg hover:shadow-xl transition-shadow">
-            <div className="inline-block bg-green-100 dark:bg-green-900/30 rounded-full p-3 sm:p-4 mb-3 sm:mb-4">
+          <div className="bg-white rounded-lg sm:rounded-2xl p-5 sm:p-8 text-center shadow-lg hover:shadow-xl transition-shadow">
+            <div className="inline-block bg-green-100 rounded-full p-3 sm:p-4 mb-3 sm:mb-4">
               <MessageCircle className="w-6 h-6 sm:w-8 sm:h-8 text-green-600" />
             </div>
             <h3 className="text-base sm:text-xl font-semibold text-foreground mb-2 sm:mb-3">WhatsApp</h3>
-            <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 mb-3 sm:mb-4">Faça seu pedido</p>
+            <p className="text-xs sm:text-sm text-gray-600 mb-3 sm:mb-4">Faça seu pedido</p>
             <a
               href={whatsappUrl}
               target="_blank"
@@ -58,7 +58,7 @@ export function ContactSection() {
         </div>
 
         {/* Map Section */}
-        <div className="bg-white dark:bg-gray-900 rounded-lg sm:rounded-2xl p-4 sm:p-8 shadow-lg">
+        <div className="bg-white rounded-lg sm:rounded-2xl p-4 sm:p-8 shadow-lg">
           <h3 className="text-xl sm:text-2xl font-semibold text-foreground mb-6 text-center">Encontre a Gente</h3>
           <div className="rounded-lg sm:rounded-xl overflow-hidden">
             <iframe
@@ -75,7 +75,7 @@ export function ContactSection() {
           </div>
           <div className="mt-4 sm:mt-6 p-3 sm:p-4 bg-primary/5 rounded-lg text-center">
             <p className="text-foreground font-semibold mb-1 sm:mb-2 text-sm sm:text-base">Av. Andradina, 1852 - Ipê</p>
-            <p className="text-gray-600 dark:text-gray-400 text-xs sm:text-sm">Foz do Iguaçu - PR 85869-380</p>
+            <p className="text-gray-600 text-xs sm:text-sm">Foz do Iguaçu - PR 85869-380</p>
           </div>
         </div>
       </div>

@@ -1,12 +1,12 @@
 export function Header() {
   return (
-    <header className="bg-white dark:bg-gray-900 shadow-md sticky top-0 z-50 border-b border-gray-200 dark:border-gray-800">
+    <header className="bg-white shadow-md sticky top-0 z-50 border-b border-gray-200">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4 flex justify-between items-center">
         <div className="flex items-center space-x-2 sm:space-x-3 flex-1">
           <span className="text-2xl sm:text-3xl">🍮</span>
           <div className="min-w-0">
             <h1 className="text-xl sm:text-2xl font-bold text-foreground truncate">Pudim Artesanal</h1>
-            <p className="text-xs text-gray-500 dark:text-gray-400">Foz do Iguaçu - PR</p>
+            <p className="text-xs text-gray-500">Foz do Iguaçu - PR</p>
           </div>
         </div>
 

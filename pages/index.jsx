@@ -23,14 +23,14 @@ export default function Home() {
 
       <Header />
 
-      <main className="min-h-screen bg-gradient-to-br from-background to-gray-50 dark:to-gray-900">
+      <main className="min-h-screen bg-gradient-to-br from-background to-gray-50">
         {/* Hero Section */}
         <section className="relative overflow-hidden py-12 sm:py-20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto text-center">
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-4 sm:mb-6 leading-tight">
               Pudins Artesanais<br className="hidden sm:block" /> Deliciosos
             </h1>
-            <p className="text-base sm:text-lg lg:text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg lg:text-xl text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
               Feitos com amor e ingredientes de qualidade. Cada produção é especial para você! 🍮
             </p>
             <a
@@ -43,7 +43,7 @@ export default function Home() {
         </section>
 
         {/* Carousel Section */}
-        <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-800">
+        <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-white">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-foreground mb-8 sm:mb-12">
               ✨ Nossos Produtos
@@ -58,7 +58,7 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center">
               <div>
                 <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-6">Por que escolher?</h2>
-                <ul className="space-y-3 sm:space-y-4 text-gray-700 dark:text-gray-300">
+                <ul className="space-y-3 sm:space-y-4 text-gray-700">
                   <li className="flex items-start">
                     <span className="inline-block w-5 h-5 sm:w-6 sm:h-6 bg-primary rounded-full mr-3 sm:mr-4 mt-1 flex-shrink-0"></span>
                     <span className="text-sm sm:text-base">Receitas autênticas e deliciosas</span>
