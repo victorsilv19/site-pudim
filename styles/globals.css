@@ -1,0 +1,78 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  --color-primary-rgb: 236 72 153;
+  --color-secondary-rgb: 249 115 22;
+  --color-accent-rgb: 6 182 212;
+  --color-bg-rgb: 255 250 247;
+  --color-fg-rgb: 31 41 55;
+
+  --color-primary: rgb(var(--color-primary-rgb));
+  --color-secondary: rgb(var(--color-secondary-rgb));
+  --color-accent: rgb(var(--color-accent-rgb));
+  --color-bg: rgb(var(--color-bg-rgb));
+  --color-fg: rgb(var(--color-fg-rgb));
+}
+
+html.dark {
+  --color-primary-rgb: 244 114 182;
+  --color-secondary-rgb: 251 146 60;
+  --color-accent-rgb: 103 232 249;
+  --color-bg-rgb: 15 23 42;
+  --color-fg-rgb: 248 250 252;
+
+  --color-primary: rgb(var(--color-primary-rgb));
+  --color-secondary: rgb(var(--color-secondary-rgb));
+  --color-accent: rgb(var(--color-accent-rgb));
+  --color-bg: rgb(var(--color-bg-rgb));
+  --color-fg: rgb(var(--color-fg-rgb));
+}
+
+* {
+  @apply transition-colors duration-300;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply min-h-screen bg-background text-foreground antialiased;
+  background-image:
+    radial-gradient(circle at top, rgba(236, 72, 153, 0.16), transparent 30%),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 250, 247, 1));
+}
+
+html.dark body {
+  background-image:
+    radial-gradient(circle at top, rgba(244, 114, 182, 0.2), transparent 30%),
+    linear-gradient(to bottom, rgba(15, 23, 42, 0.96), rgba(15, 23, 42, 1));
+}
+
+.glass-panel {
+  @apply bg-white/80 border border-white/40 shadow-[0_18px_60px_rgba(15,23,42,0.08)] backdrop-blur-sm dark:bg-slate-900/80 dark:border-slate-700/80 dark:shadow-[0_18px_60px_rgba(2,6,23,0.6)];
+}
+
+.soft-card {
+  @apply bg-white/80 border border-gray-200/80 shadow-[0_12px_35px_rgba(15,23,42,0.06)] dark:bg-slate-900/80 dark:border-slate-700/80 dark:shadow-[0_12px_35px_rgba(2,6,23,0.45)];
+}
+
+/* Smooth scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100 dark:bg-slate-900;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary rounded-full hover:bg-primary/80;
+}
+
+/* Selection */
+::selection {
+  @apply bg-primary text-white;
+}
